@@ -222,31 +222,135 @@
 # puts('The weatherman said there is a')
 # puts rand(101).to_s + '% chance of rain,'
 # puts('but you can never trust a weatherman')
-puts "NUMBERS".chomp
+# puts "NUMBERS".chomp
 
-srand 1976
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts " "
-srand 1976
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts " "
-srand 2004
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts " "
-srand 2004
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
+# srand 1976
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts " "
+# srand 1976
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts " "
+# srand 2004
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts " "
+# srand 2004
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+# puts(rand(100))
+
+# input = ''
+# while input != 'bye'
+# 	puts input
+# 	input = gets.chomp
+# end
+# puts 'Come again soon!'
+
+# while 'Spike' > 'Angel'
+# 	input = gets.chomp
+# 	puts input
+# 	if input == 'bye'
+# 		break
+# 	end
+# end
+# puts 'Come again soon!'
+
+# while true
+# 	input = gets.chomp
+# 	puts input
+# 	if input == 'bye'
+# 		break
+# 	end
+# end
+# puts 'come again soon'
+
+# puts 'Hello, what\'s your name?'
+# name = gets.chomp
+# puts 'Hello, ' + name + '.'
+
+# if name == 'Chris' || name == 'Katy'
+# 	puts 'What a lovely name!'
+# end
+
+# while true
+# 	puts 'What would you like to ask C to do?'
+# 	request = gets.chomp
+
+# 	puts 'You say, "C, please ' + request + '."'
+
+# 	puts 'C\'s response:'
+# 	puts '"C ' + request + '."'
+# 	puts '"Papa ' + request + ', too."'
+# 	puts
+# 	if request == 'stop'
+# 		break
+# 	end
+# end
+# puts "Hey sonny, give grandma a kiss!"
+# bye_count = 0
+# 	while true
+# 	word = gets.chomp
+# 	if word == 'BYE' 
+# 		bye_count += 1
+# 	else
+# 		bye_count = 0
+# 	end
+# 	break if bye_count >= 3
+
+# 	response = if word != word.upcase
+# 		puts 'HUH!? SPEAK UP SONNY!'
+# 	else
+# 		random_year = 1930 + rand(21)
+# 		puts 'NO, NOT SINCE ' + random_year.to_s + '!'
+# 	end
+# 	puts response
+# end
+
+# puts "Bye cupcake"
+
+puts
+puts "Lets find out every leap year in a given period of time..."
+puts 
+puts "What year should we start with?"
+start_year = gets.chomp.to_i
+
+puts "What year should we end with?"
+end_year = gets.chomp.to_i
+
+all_years = (end_year - start_year)
+
+puts 'Check it out, all these years are leap years:'
+year = start_year
+
+while year <= end_year
+	if year % 4 == 0
+		if year % 100 != 0 || year % 400 != 0
+			puts year
+		end
+	end
+	year = year + 1
+end
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
